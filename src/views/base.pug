@@ -1,0 +1,9 @@
+doctype html
+html(lang="en")
+body 
+    include partials/header
+    if pageTitle 
+        h1=pageTitle 
+    main#main
+        block contents 
+    include partials/navbar

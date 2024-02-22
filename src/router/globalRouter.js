@@ -1,11 +1,16 @@
 import express from "express";
+import {
+  handleHome,
+  handleAbout,
+  handleProject,
+  handleContact,
+} from "../controller/pageController";
 
 const globalRouter = express.Router();
 
-const handleHome = (req, res) => {
-  return res.render("home");
-};
-
 globalRouter.get("/", handleHome);
+globalRouter.get("/about", handleAbout);
+globalRouter.get("/projects", handleProject);
+globalRouter.get("/contact", handleContact);
 
 export default globalRouter;
