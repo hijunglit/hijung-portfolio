@@ -1,0 +1,37 @@
+@import "./reset.css";
+@import "./_variables.css";
+/******************* Mobile *******************/
+#intro {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #161616;
+    transition: 1s;
+}
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.logo {
+    position: relative;
+    opacity: 1;
+}
+.logo.fadeout {
+    opacity: 0;
+    transition: ease-in-out 0.6s;
+}
+
+/******************* Tablet *******************/
+@media screen and(min-width: 768px) {
+
+}
+/******************* Desktop *******************/
+@media screen and (min-width: 960px) {
+    
+}
