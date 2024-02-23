@@ -13,6 +13,9 @@ function introAnimation() {
     }, 1500);
     setTimeout(() => {
       intro.style.opacity = 0;
+      setTimeout(() => {
+        intro.remove();
+      }, 500);
     }, 2000);
   });
 }

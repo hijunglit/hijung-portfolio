@@ -1,6 +1,11 @@
 @import "./reset.css";
 @import "./_variables.css";
 /******************* Mobile *******************/
+body {
+    font-family: var(--main-font);
+    
+}
+/* intro */
 #intro {
     position: fixed;
     z-index: 1;
@@ -26,6 +31,9 @@
     opacity: 0;
     transition: ease-in-out 0.6s;
 }
+
+/* main */
+
 
 /******************* Tablet *******************/
 @media screen and(min-width: 768px) {
