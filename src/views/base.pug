@@ -2,15 +2,14 @@ doctype html
 html(lang="en")
     include ../partials/head
 body 
-    include ../partials/intro
-    #container 
-        .theme 
-        .frame 
-            #main 
-                include ../partials/header
-                #main__contents 
-                    block contents 
-            .background 
+    //- include ../partials/intro 
+    .bg 
+    .container
+        .wrapper
+            include ../partials/header
+            main#main 
+                block contents 
+
     script(src="/static/js/app.js") 
 
 

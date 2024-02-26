@@ -3,9 +3,19 @@
 /******************* Mobile *******************/
 body {
     font-family: var(--main-font);
+    color: var(--main-color);
     
 }
-/* intro */
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+.wrapper {
+    width: 96%;
+    margin: 0 auto;
+}
+
+/* Intro */
 #intro {
     position: fixed;
     z-index: 1;
@@ -22,17 +32,76 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    font-size: var();
 }
 .logo {
     position: relative;
     opacity: 1;
+    font-size: var(--title-font-size);
 }
 .logo.fadeout {
     opacity: 0;
     transition: ease-in-out 0.6s;
 }
+.logo:nth-child(1) {
+    font-weight: 100;
+}
+.logo:nth-child(2) {
+    font-weight: 400;
+}
 
-/* main */
+/* Bg */
+.bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, var(--bg-color1) 0%, var(--bg-color2) 25%, var(--bg-color3) 51%, var(--bg-color4) 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+}
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 25% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 16px 0;
+    text-align: center;
+    border-bottom: 2px solid var(--main-color);
+}
+#menu {
+    position: relative;
+
+}
+/* Main */
 
 
 /******************* Tablet *******************/
