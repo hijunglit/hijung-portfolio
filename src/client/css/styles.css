@@ -105,16 +105,14 @@ a {
 
 /* Site menu */
 .siteMenu {
-    display: block;
     position: fixed;
     z-index: 9;
-    top: var(--header-height);
     left: 0;
+    top: var(--header-height);
     width: 100%;
     padding: 25px var(--margin);
     box-sizing: border-box;
-    opacity: 1;
-    transform: translate(0px, 0px);
+    transition: 1s ease-in;
 }
 .siteMenu > ul {
     display: flex;
@@ -123,7 +121,7 @@ a {
     font-size: 24px;
     text-transform: capitalize;
 }
-.siteMenu.invisible {
+.siteHeader-nav.invisible {
     display: none;
 }
 
@@ -138,6 +136,7 @@ a {
     overflow: hidden;
 }
 .page {
+    transition: 0.2s ease-in;
     position: absolute;
     left: 0;
     top: 0;

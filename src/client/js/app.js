@@ -27,8 +27,26 @@ function introAnimation() {
 }
 
 function handleMenu() {
-  const menuHeight = document.querySelector(".siteMenu");
+  const isToggle = menuBtn.classList.toggle("open");
+  const siteMenu = document.querySelector(".siteMenu");
+  let menuHeight = siteMenu.offsetHeight;
   const page = document.querySelector(".page");
+  if (isToggle) {
+    siteMenu.setAttribute(
+      "style",
+      " display:block; translate:none; rotate: none; scale: none; transform:translate(0px, 0px); opacity:1;"
+    );
+    menuHeight = siteMenu.offsetHeight;
+    page.setAttribute("style", `transform:translate(0px, ${menuHeight}px)`);
+    menuBtn.innerText = "close";
+  } else {
+    siteMenu.setAttribute(
+      "style",
+      "display:none; translate: none; rotate: none; scale: none; transform:translate(0px, -20%); opacity: 0;"
+    );
+    page.setAttribute("style", "transform:translate(0px, 0px)");
+    menuBtn.innerText = "menu";
+  }
 }
 
 window.addEventListener("DOMContentLoaded", introAnimation);
