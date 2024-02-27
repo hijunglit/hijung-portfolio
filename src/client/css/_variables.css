@@ -16,4 +16,8 @@
 }
 :root {
     --header-height: 80px;
+    --vh: 1vh;
+}
+:root {
+    --margin: 10px;
 }
