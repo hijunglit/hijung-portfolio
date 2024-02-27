@@ -1,14 +1,13 @@
 header#header 
-    .logo
-        h1#header__title 정해인 포트폴리오
-        p#header__field Web Developer 
-    .menuBtn
-        button
-            h3 menu
-nav#menu
-    a(href="#")
-        p about 
-    a(href="#")
-        p projects 
-    a(href="#")   
-        p contact 
+    a(href="/")
+        h1.header__logo 정해인  
+        p.header__logo-type 포트폴리오
+    .header__menu
+        button.siteMenuBtn menu
+        nav.siteMenu.invisible
+            a(href="#")
+                p about 
+            a(href="#")
+                p projects 
+            a(href="#")
+                p contact

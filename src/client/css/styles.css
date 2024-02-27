@@ -10,10 +10,6 @@ a {
     text-decoration: none;
     color: var(--main-color);
 }
-.wrapper {
-    width: 96%;
-    margin: 0 auto;
-}
 
 /* Intro */
 #intro {
@@ -32,9 +28,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: var();
 }
-.logo {
+#intro .logo {
     position: relative;
     opacity: 1;
     font-size: var(--title-font-size);
@@ -88,21 +83,9 @@ a {
 }
 
 /* Header */
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 16px 0;
-    text-align: center;
-    border-bottom: 2px solid var(--main-color);
+.siteMenu.invisible {
+    display: none;
 }
-#menu {
-    position: relative;
-
-}
-/* Main */
-
 
 /******************* Tablet *******************/
 @media screen and(min-width: 768px) {

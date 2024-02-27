@@ -3,12 +3,11 @@ html(lang="en")
     include ../partials/head
 body 
     //- include ../partials/intro 
-    .bg 
-    .container
-        .wrapper
-            include ../partials/header
-            main#main 
-                block contents 
+    .bg    
+    include ../partials/header
+    include ../partials/siteMenu
+    main#main
+        block contents 
 
     script(src="/static/js/app.js") 
 
