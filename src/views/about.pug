@@ -1,2 +1,29 @@
 extends base
 block contents
+    .page_inner(stype={transform: "translate3d(0px, 0px, 0px)"})
+        .about 
+            .about_wrap 
+                .about_profile 
+                    .about_header 
+                        h2 정해인
+                    .about_content 
+                        .about_main 
+                            .about_profileImage 
+                                img(src="/images/pascucci.jpg", alt="profile image")
+                            .about_profileText 
+                                p 
+                                    strong 안녕하세요! 
+                                    | 풀스택 웹 개발자로 성장하고 있는 
+                                    strong 정해인 
+                                    | 입니다. 
+                        ul.about_links 
+                            li
+                                a(href="https://github.com/hijunglit") 
+                                    i.fab.fa-github
+                            li
+                                a(href="#") 
+                                    i.fab.fa-github 
+                            li
+                                a(href="#") 
+                                    i.fab.fa-github
+

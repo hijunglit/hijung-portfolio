@@ -11,6 +11,7 @@ app.set("views", process.cwd() + "/src/views");
 app.set("view engine", "pug");
 app.use("/", globalRouter);
 app.use("/static", express.static(process.cwd() + "/src/client"));
+app.use("/images", express.static(process.cwd() + "/src/images"));
 
 const handleListen = () =>
   console.log(`✅ Server is listening on port http://localhost:${PORT} 🚀`);

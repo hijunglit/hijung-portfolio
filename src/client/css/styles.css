@@ -4,7 +4,7 @@
 body {
     font-family: var(--main-font);
     color: var(--main-color);
-    
+    opacity: 0;
 }
 a {
     text-decoration: none;
@@ -160,6 +160,38 @@ a {
     display: flex;
 } 
 
+/* About */
+.page_inner {
+    padding: 50px 0 0;
+}
+.about {
+    padding: 0 var(--margin);
+    box-sizing: border-box;
+}
+.about_header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--main-color);
+}
+.about_content {
+    padding-top: 10px;
+}
+.about_profileImage img {
+    width: 100%;
+    height: auto;
+}
+.about_profileText {
+    margin-top: 25px;
+}
+.about_links {
+    display: flex;
+    align-items: center;
+    gap: 0 1.25em;
+    margin-top: 25px;
+} 
+
 /******************* Tablet *******************/
 @media screen and (min-width: 768px) {
     .header__menu {
@@ -167,6 +199,21 @@ a {
     }
     #header .siteHeader-nav {
         display: flex;
+        height: 100%;
+    }
+    #header .siteHeader-nav > ul {
+        display: flex;
+        column-gap: 1em;
+    }
+    .siteHeader_page a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        cursor: pointer;
+        transition-property: opacity;
+        transition-duration: .15s;
+        transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
     }
 }
 /******************* Desktop *******************/
