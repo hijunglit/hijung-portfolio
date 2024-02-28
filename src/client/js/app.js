@@ -34,7 +34,7 @@ function handleMenu() {
   if (isToggle) {
     siteMenu.setAttribute(
       "style",
-      " display:block; translate:none; rotate: none; scale: none; transform:translate(0px, 0px); opacity:1;"
+      "display:block; translate:none; rotate: none; scale: none; transform:translate(0px, 0px); opacity:1;"
     );
     menuHeight = siteMenu.offsetHeight;
     page.setAttribute("style", `transform:translate(0px, ${menuHeight}px)`);
@@ -42,7 +42,7 @@ function handleMenu() {
   } else {
     siteMenu.setAttribute(
       "style",
-      "display:none; translate: none; rotate: none; scale: none; transform:translate(0px, -20%); opacity: 0;"
+      "transition: 0.2s ease-in; translate: none; rotate: none; scale: none; transform:translate(0px, -20%); opacity: 0; display:none;"
     );
     page.setAttribute("style", "transform:translate(0px, 0px)");
     menuBtn.innerText = "menu";

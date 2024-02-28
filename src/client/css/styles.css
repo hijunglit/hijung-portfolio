@@ -102,6 +102,9 @@ a {
     color: var(--main-color);
     text-transform: uppercase;
 }
+#header .siteHeader-nav {
+    display: none;
+}
 
 /* Site menu */
 .siteMenu {
@@ -112,7 +115,7 @@ a {
     width: 100%;
     padding: 25px var(--margin);
     box-sizing: border-box;
-    transition: 1s ease-in;
+    transition: 0.2s ease-in; 
 }
 .siteMenu > ul {
     display: flex;
@@ -120,9 +123,6 @@ a {
     gap: 0.5em 0;
     font-size: 24px;
     text-transform: capitalize;
-}
-.siteHeader-nav.invisible {
-    display: none;
 }
 
 /* Main */
@@ -161,8 +161,13 @@ a {
 } 
 
 /******************* Tablet *******************/
-@media screen and(min-width: 768px) {
-
+@media screen and (min-width: 768px) {
+    .header__menu {
+        display: none;
+    }
+    #header .siteHeader-nav {
+        display: flex;
+    }
 }
 /******************* Desktop *******************/
 @media screen and (min-width: 960px) {
