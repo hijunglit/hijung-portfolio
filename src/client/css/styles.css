@@ -156,9 +156,23 @@ a {
     align-items: center;
     text-align: center;
 }
-.mainContent .contact > ul {
+.mainContent .contact {
     display: flex;
+    justify-content: flex-end;
+    column-gap: 1.25em;
+    margin-top: 50px;
 } 
+.contact li {
+    height: 1.25em;
+}
+.contact li > a {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: .15s;
+    transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+}
 
 /* About */
 .page_inner {
@@ -191,6 +205,79 @@ a {
     gap: 0 1.25em;
     margin-top: 25px;
 } 
+.about_links li {
+    height: 1.25em;
+}
+.about_links li > a {
+    position: relative;
+    display: block;
+    height: 100%;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: .15s;
+    transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+}
+
+/* Projects */
+.project_header {
+    width: calc(100% - var(--margin)*2);
+    margin: 0 auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--main-color);
+}
+.project_title {
+    margin-left: -0.04em;
+    font-weight: var(--regular-font-weight);
+    font-size: var(--heading);
+}
+.project_content {
+    width: calc(100% - var(--margin)*2);
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.project_visual {
+    flex: 0 0 calc(var(--column)*4 + var(--gutter)*3);
+}
+.project_visual img {
+    width: 100%;
+    height: auto;
+}
+.project_description {
+    margin-top: 25px;
+}
+.project_link {
+    margin-top: 25px;
+    white-space: nowrap;    
+}
+
+/* Footer */
+#footer {
+    margin-top: 200px;
+    padding: var(--margin);
+}
+.footer_inner  {
+    position: relative;
+    height: 350px;
+    padding-top: var(--margin);
+    border-top: 1px solid var(--main-color);
+}
+.footer_pages {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em 0;
+}
+.footer_contact {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 1.25;
+    margin-top: 50px;
+}
+.footer_mark {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
 /******************* Tablet *******************/
 @media screen and (min-width: 768px) {
@@ -214,6 +301,12 @@ a {
         transition-property: opacity;
         transition-duration: .15s;
         transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+    }
+    .project_main {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: calc(var(--column)*1 + var(--gutter)*2);
     }
 }
 /******************* Desktop *******************/

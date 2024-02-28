@@ -10,13 +10,16 @@
 :root {
     --bg-color1: #cdd7de;
     --bg-color2: #6c7c8c;
-    --bg-color3: #6c848c;
+    --bg-color3: #5e6365;
     --bg-color4: #455762;
     --main-color: #e6e6e6;
 }
 :root {
+    --heading: 1.24em;
     --header-height: 60px;
     --vh: 1vh;
+    --column: 7.5195vw;
+    --gutter: 0.6510vw;
 }
 :root {
     --margin: 10px;
