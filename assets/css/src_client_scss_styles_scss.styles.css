@@ -1,0 +1,444 @@
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/scss/styles.scss ***!
+  \**********************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap);
+/*!**************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/client/scss/styles.scss (1) ***!
+  \**************************************************************************************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Font */
+/* Color */
+/* Gap */
+/******************* Mobile *******************/
+body {
+  font-family: "Roboto", sans-serif;
+  color: #e6e6e6;
+  opacity: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+/* Intro */
+#intro {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #161616;
+  transition: 1s;
+}
+
+.logo-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+#intro .logo {
+  position: relative;
+  opacity: 1;
+  font-size: 1.375em;
+}
+
+.logo.fadeout {
+  opacity: 0;
+  transition: ease-in-out 0.6s;
+}
+
+.logo:nth-child(1) {
+  font-weight: 100;
+}
+
+.logo:nth-child(2) {
+  font-weight: 400;
+}
+
+/* Bg */
+.bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, #cdd7de 0%, #6c7c8c 25%, #455762 51%, #cdd7de 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 25% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+  z-index: 9;
+}
+
+#header .header__menu > button {
+  background: none;
+  border: none;
+  color: #e6e6e6;
+  text-transform: uppercase;
+}
+
+#header .siteHeader-nav {
+  display: none;
+}
+
+/* Site menu */
+.siteMenu {
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  padding: 25px 10px;
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
+}
+
+.siteMenu > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em 0;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+/* Main */
+#main {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow: hidden;
+}
+
+.page {
+  transition: 0.2s ease-in;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.mainContent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mainContent .contact {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1.25em;
+  margin-top: 50px;
+}
+
+.contact li {
+  height: 1.25em;
+}
+
+.contact li > a {
+  display: block;
+  height: 100%;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+}
+
+/* About */
+.page_inner {
+  padding: 50px 0 0;
+}
+
+.about {
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.about_header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.about_main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 8.8215vw;
+}
+
+.about_content {
+  padding-top: 10px;
+}
+
+.about_profileImage {
+  flex: 0 0 32.031vw;
+}
+
+.about_profileImage img {
+  width: 100%;
+  height: auto;
+}
+
+.about_profileText {
+  margin-top: 25px;
+}
+
+.about_links {
+  display: flex;
+  align-items: center;
+  gap: 0 1.25em;
+  margin-top: 25px;
+}
+
+.about_links li {
+  height: 1.25em;
+}
+
+.about_links li > a {
+  position: relative;
+  display: block;
+  height: 100%;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+}
+
+/* Projects */
+.project_header {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.project_title {
+  margin-left: -0.04em;
+  font-weight: 400;
+  font-size: 1.24em;
+  text-transform: capitalize;
+}
+
+.project_content {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.project_visual {
+  flex: 0 0 32.031vw;
+}
+
+.project_visual img {
+  width: 100%;
+  height: auto;
+}
+
+.project_visual .content__slate {
+  z-index: 999;
+  transform: none;
+  opacity: 1;
+}
+
+.content__slate p {
+  font-size: calc(0.813em + 0.9px);
+  color: rgb(213, 213, 213);
+  padding: 8px 0;
+}
+
+.content__slate p span {
+  background: rgb(105, 104, 105);
+  padding: 4px 10px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 11px;
+  margin-right: 6px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+.project_description {
+  margin-top: 25px;
+}
+
+.project_link {
+  margin-top: 25px;
+  white-space: nowrap;
+}
+
+/* Footer */
+#footer {
+  margin-top: 200px;
+  padding: 10px;
+}
+
+.footer_inner {
+  position: relative;
+  height: 350px;
+  padding-top: 10px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.footer_pages {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em 0;
+}
+
+.footer_contact {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1.25;
+  margin-top: 50px;
+}
+
+.footer_mark {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/******************* Tablet *******************/
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+  #header .siteHeader-nav {
+    display: flex;
+    height: 100%;
+  }
+  #header .siteHeader-nav > ul {
+    display: flex;
+    column-gap: 1em;
+  }
+  .siteHeader_page a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 0.15s;
+    transition-timing-function: cubic-bezier(0.3, 0.1, 0.1, 1);
+  }
+  .project_main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 8.8215vw;
+  }
+  .project_description {
+    margin-top: -0.5em;
+  }
+}
+/******************* Desktop *******************/

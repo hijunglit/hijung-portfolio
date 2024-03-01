@@ -1,3 +1,5 @@
+import("../scss/styles.scss");
+
 console.log(
   "document viewport width:",
   document.documentElement.clientWidth,
