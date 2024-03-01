@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400,700&display=swap');
 
 :root {
     --main-font: "Roboto", sans-serif;
     --thin-font-weight: 100;
     --light-font-weight: 300;
     --regular-font-weight: 400;
-    --title-font-size: 1.875em;
+    --title-font-weight: 700;
+    --font-sm: 0.813em;
+    --title-font-size: 1.375em;
+    --font-x-md: 1.517em;
 }
 :root {
     --bg-color1: #cdd7de;

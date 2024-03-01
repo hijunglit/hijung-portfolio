@@ -55,7 +55,7 @@ a {
     align-items: center;
     justify-content: center;
     background-size: 300% 300%;
-    background-image: linear-gradient(-45deg, var(--bg-color1) 0%, var(--bg-color2) 25%, var(--bg-color3) 51%, var(--bg-color4) 100%);
+    background-image: linear-gradient(-45deg, var(--bg-color1) 0%, var(--bg-color2) 25%, var(--bg-color4) 51%, var(--bg-color1) 100%);
     -webkit-animation: AnimateBG 20s ease infinite;
     animation: AnimateBG 20s ease infinite;
 }
@@ -189,8 +189,17 @@ a {
     padding-bottom: 10px;
     border-bottom: 1px solid var(--main-color);
 }
+.about_main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: calc(var(--column)*1 + var(--gutter)*2);
+}
 .about_content {
     padding-top: 10px;
+}
+.about_profileImage {
+    flex: 0 0 calc(var(--column)*4 + var(--gutter)*3);
 }
 .about_profileImage img {
     width: 100%;
@@ -229,6 +238,7 @@ a {
     margin-left: -0.04em;
     font-weight: var(--regular-font-weight);
     font-size: var(--heading);
+    text-transform: capitalize;
 }
 .project_content {
     width: calc(100% - var(--margin)*2);
@@ -241,6 +251,26 @@ a {
 .project_visual img {
     width: 100%;
     height: auto;
+}
+.project_visual .content__slate {
+    z-index: 999;
+    transform: none;
+    opacity: 1;
+}
+.content__slate p {
+    font-size: calc(var(--font-sm) + 0.9px);
+    color: rgb(213,213,213);
+    padding: 8px 0;
+}
+.content__slate p span {
+    background: rgb(105, 104, 105);
+    padding: 4px 10px;
+    border-radius: 50px;
+    text-transform: capitalize;
+    font-size: 11px;
+    margin-right: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
 }
 .project_description {
     margin-top: 25px;
@@ -307,6 +337,9 @@ a {
         justify-content: flex-start;
         align-items: flex-start;
         column-gap: calc(var(--column)*1 + var(--gutter)*2);
+    }
+    .project_description {
+        margin-top: -0.5em;
     }
 }
 /******************* Desktop *******************/
