@@ -1,7 +1,7 @@
 import express from "express";
 import morgan from "morgan";
 import globalRouter from "./router/globalRouter";
-
+console.log("dir name is ", __dirname);
 const PORT = 8080;
 
 const cwd = process.cwd();

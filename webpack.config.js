@@ -11,7 +11,7 @@ module.exports = {
     }),
   ],
   output: {
-    filename: "js/main.js",
+    filename: "js/[name].js",
     path: path.resolve(__dirname, "assets"),
     clean: true,
   },
@@ -28,6 +28,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
     ],
