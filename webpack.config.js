@@ -39,7 +39,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "[contenthash].[ext]",
+              name: "[name].[ext]",
               outputPath: "images",
             },
           },
