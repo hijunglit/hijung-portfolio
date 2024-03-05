@@ -4,10 +4,7 @@ const path = require("path");
 const BASE_JS = "./src/client/js/";
 
 module.exports = {
-  entry: {
-    main: BASE_JS + "main.js",
-    file: BASE_JS + "file.js",
-  },
+  entry: BASE_JS + "main.js",
   plugins: [
     new MiniCssExtractPlugin({
       filename: "css/styles.css",
@@ -33,18 +30,6 @@ module.exports = {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[contenthash].[ext]",
-              outputPath: "images",
-            },
-          },
-        ],
       },
     ],
   },
