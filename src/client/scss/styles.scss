@@ -1,6 +1,8 @@
 @import "./reset.scss";
 @import "./variables";
+@import "./locomotive-scroll.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 /******************* Mobile *******************/
 body {
     font-family: $--main-font;
@@ -263,7 +265,7 @@ a {
     color: rgb(213,213,213);
     padding: 8px 0;
 }
-.content__slate p span {
+.text-post.sub p span {
     background: rgb(105, 104, 105);
     padding: 4px 10px;
     border-radius: 50px;
@@ -273,8 +275,15 @@ a {
     color: rgb(255, 255, 255);
     font-weight: 400;
 }
+.sub {
+    position: relative;
+}
 .project_description {
     margin-top: 25px;
+}
+.text-post {
+    line-height: 2;
+    white-space: pre-line;
 }
 .project_link {
     margin-top: 25px;
@@ -288,9 +297,17 @@ a {
 }
 .footer_inner  {
     position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
     height: 350px;
     padding-top: $--margin;
     border-top: 1px solid $--main-color;
+}
+.footer_right {
+    width: 48px; 
+    height: 60px;
 }
 .footer_pages {
     font-size: 24px;
@@ -301,7 +318,7 @@ a {
 .footer_contact {
     display: flex;
     justify-content: flex-end;
-    column-gap: 1.25;
+    column-gap: 1.25em;
     margin-top: 50px;
 }
 .footer_mark {
@@ -337,13 +354,39 @@ a {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        width: 100%;
         column-gap: calc($--column*1 + $--gutter*2);
     }
     .project_description {
         margin-top: -0.5em;
     }
+    .project_description p {
+        max-width: 40em;
+    }
+    .footer_inner {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 500px;
+    }
+    .footer_pages {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0 1em;
+    }
+    .footer_mark {
+        right: 0;
+    }
 }
 /******************* Desktop *******************/
 @media screen and (min-width: 960px) {
-    
+    .project_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: $--gutter;
+    }
+    .project_link {
+        margin-top: 0px;
+        white-space: nowrap;
+    }
 }

@@ -2,7 +2,6 @@ import "dotenv/config";
 import express from "express";
 import morgan from "morgan";
 import globalRouter from "./router/globalRouter";
-console.log("dir name is ", __dirname);
 const PORT = process.env.PORT || 3000;
 
 const cwd = process.cwd();

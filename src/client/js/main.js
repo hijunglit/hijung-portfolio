@@ -1,4 +1,5 @@
 import "../scss/styles.scss";
+import LocomotiveScroll from "locomotive-scroll";
 
 console.log(
   "document viewport width:",
@@ -14,6 +15,8 @@ console.log(
 );
 
 const menuBtn = document.querySelector(".siteMenuBtn");
+const pageInner = document.querySelector(".page_inner");
+const scroll = new LocomotiveScroll();
 
 function introAnimation() {
   let intro = document.querySelector("#intro");
