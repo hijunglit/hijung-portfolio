@@ -1,5 +1,4 @@
 import "../scss/styles.scss";
-import LocomotiveScroll from "locomotive-scroll";
 
 console.log(
   "document viewport width:",
@@ -69,31 +68,6 @@ function handleMenu() {
     page.setAttribute("style", "transform:translate(0px, 0px)");
     menuBtn.innerText = "menu";
   }
-}
-
-// data scroll
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true,
-});
-
-let startY = 0;
-document.querySelector(".page_inner").addEventListener("mousedown", (event) => {
-  console.log(event);
-  startY = event.clientY;
-  document.addEventListener("mousemove", mouseMoveHandler);
-  document.addEventListener("mouseup", mouseUpHandler);
-});
-
-function mouseMoveHandler(event) {
-  let currentY = event.clientY;
-  let distance = currentY - startY;
-
-  this.style.transform = `translate3d(0, -${distance}px, 0)`;
-}
-function mouseUpHandler() {
-  document.removeEventListener("mousemove", mouseMoveHandler);
-  document.removeEventListener("mouseup", mouseUpHandler);
 }
 
 window.addEventListener("DOMContentLoaded", introAnimation);
