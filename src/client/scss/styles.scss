@@ -7,7 +7,7 @@ body {
     font-family: $--main-font;
     color: $--main-color;
     opacity: 0;
-    font-size: 13px;
+    font-size: 14px;
 }
 a {
     text-decoration: none;
@@ -210,12 +210,6 @@ a {
     width: 100%;
     height: auto;
 }
-.about_profileText {
-    margin-top: 25px;
-}
-.basicProfile__container {
-    margin-top: 25px;
-}
 .basicProfile__container .basicProfile__item {
     display: flex;
     line-height: 1.6rem;
@@ -235,7 +229,48 @@ a {
     display: inline-block;
     margin-right: 10px;
 }
-
+.aboutMe__container {
+    margin-top: 25px;
+}
+.aboutMe__container p {
+    line-height: 1.6rem;
+}
+.aboutMe__item {
+    margin-top: 25px;
+}
+.aboutMe__item-title {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.skills__container {
+    margin-top: 25px;
+}
+.skills__item {
+    -webkit-box-pack: justify;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 30px;
+    backdrop-filter: blur(25px);
+    box-shadow: fgba(9,9,9,0.1) 0px 0px 0px 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    margin-bottom: 2.4rem;
+}
+.skillsType {
+    margin-top: -1.4em;
+}
+.skills__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px;
+    font-size: 20px;
+}
+.skills__icons li {
+    display: flex;
+}
+.skills__icons span {
+    font-size: 14px;
+}
 /* Projects */
 .project_header {
     width: calc(100% - $--margin*2);
@@ -389,7 +424,7 @@ a {
         flex-direction: row;
         justify-content: flex-end;
         gap: 0 1em;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 700;
     }
     .footer_contact {
