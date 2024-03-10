@@ -7,11 +7,8 @@ body
     .bg    
     include ../partials/header
     include ../partials/siteMenu
-    main#main
-        .page(
-        style={
-            opacity: "1", translate: "none", rotate:"none", scale: "none", transform: "translate(0px, 0px)"
-            }
+    main#main(data-scroll-container)
+        .page(data-scroll style={opacity: "1", translate: "none", rotate:"none", scale: "none", transform: "translate(0px, 0px)"}
         )
             block contents
     script(src="/static/js/main.js") 
