@@ -383,6 +383,39 @@ a {
     white-space: nowrap;    
 }
 
+/* Contact */
+.contact__item {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.contact__item p:first-child {
+    display: flex;
+    width: 110px;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.contact__item p:first-child::before {
+    content: "";
+    width: 3px;
+    height: 1rem;
+    background-color: $--main-color;
+    display: inline-block;
+    margin-right: 10px;
+}
+.contact__item p:nth-child(2) {
+    margin-left: 1rem;
+}
+.contact__item.link {
+    justify-content: center;
+    column-gap: 1.25em;
+    margin-top: 50px;
+}
+
 /* Footer */
 #footer {
     margin-top: 200px;
