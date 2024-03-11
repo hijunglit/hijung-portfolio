@@ -230,20 +230,23 @@ a {
     margin-right: 10px;
 }
 .aboutMe__container {
-    margin-top: 25px;
+    margin-top: $--margin-top;
 }
 .aboutMe__container p {
     line-height: 1.6rem;
 }
 .aboutMe__item {
-    margin-top: 25px;
+    margin-top: $--margin-top;
+}
+.aboutMe__item:last-child {
+    margin-bottom: $--margin-top;
 }
 .aboutMe__item-title {
     font-size: 20px;
     text-transform: capitalize;
 }
 .skills__container {
-    margin-top: 25px;
+    margin-top: $--margin-top;
 }
 .skills__item {
     -webkit-box-pack: justify;
@@ -251,7 +254,6 @@ a {
     background: rgba(255,255,255,0.2);
     border-radius: 30px;
     backdrop-filter: blur(25px);
-    box-shadow: fgba(9,9,9,0.1) 0px 0px 0px 10px;
     border: 1px solid rgba(255,255,255,0.3);
     margin-bottom: 2.4rem;
 }
@@ -271,6 +273,56 @@ a {
 .skills__icons span {
     font-size: 14px;
 }
+.strength__list {
+    margin-top: $--margin;
+}
+.strength__list li {
+    list-style: inside;
+    line-height: 1.6rem;
+}
+.about_history p {
+    line-height: 1.6rem;
+    padding: 0px 4px;
+}
+.about_history .duration {
+    margin-top: $--margin;
+}
+.history__item:not(:first-child) {
+    margin-top: $--margin-top;
+}
+.history__item_title {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.history__item ul li {
+    -webkit-box-pack: justify;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.3);
+    margin: 25px 0;
+
+}
+.history__item ul p:first-child {
+    display: flex;
+    --webkit-box-align: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.143em;
+}
+.history__item ul p:first-child::before {
+    content: "";
+    width: 3px;
+    height: 1rem;
+    background-color: $--main-color;
+    display: inline-block;
+    margin-right: 10px;
+}
+.resume__container {
+    margin-top: $--margin-top;
+}
+
 /* Projects */
 .project_header {
     width: calc(100% - $--margin*2);
@@ -320,14 +372,14 @@ a {
     position: relative;
 }
 .project_description {
-    margin-top: 25px;
+    margin-top: $--margin-top;
 }
 .text-post {
     line-height: 2;
     white-space: pre-line;
 }
 .project_link {
-    margin-top: 25px;
+    margin-top: $--margin-top;
     white-space: nowrap;    
 }
 
@@ -445,5 +497,13 @@ a {
     .project_link {
         margin-top: 0px;
         white-space: nowrap;
+    }
+    .about_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .about_body {
+        max-width: 54.857em;
     }
 }
