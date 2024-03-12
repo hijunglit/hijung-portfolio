@@ -45,6 +45,11 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|jpg|jpeg|gif|webp)$/i,
+        loader: "image-webpack-loader",
+        enforce: "pre",
+      },
     ],
   },
 };
