@@ -324,6 +324,9 @@ a {
 }
 
 /* Projects */
+.project:not(:first-child) {
+    margin-top: 100px;
+}
 .project_header {
     width: calc(100% - $--margin*2);
     margin: 0 auto;

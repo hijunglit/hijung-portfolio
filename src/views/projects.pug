@@ -1,23 +1,7 @@
 extends base
+include ../mixins/project
 block contents 
     .page_inner
-        .project 
-            .project_header 
-                h1.project_title youtube clone
-            .project_content 
-                .project_main
-                    .project_visual
-                        img(src="/static/images/youtube-sample.gif", alt="project image")
-                    .project_description
-                        .text-post
-                            .content__slate 
-                                p crud를 구현한 동영상 플랫폼 클론 프로젝트 
-                        .text-post.sub
-                            p.flex-wrap 
-                                span node.js 
-                                span mongodb 
-                                span aws 
-                                span fly.io
-                p.project_link
-                    a(href="https://youtube-2024.fly.dev" target="_blank") Link &rarr;
+        each item in project
+            +projects(item)
         include ../partials/footer

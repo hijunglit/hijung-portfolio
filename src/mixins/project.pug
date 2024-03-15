@@ -1,0 +1,18 @@
+mixin projects(project)
+    .project 
+        .project_header 
+            h1.project_title=project.name
+        .project_content 
+            .project_main
+                .project_visual
+                    img(src=project.img, alt="project image")
+                .project_description
+                    .text-post
+                        .content__slate 
+                            p=project.desc
+                    .text-post.sub
+                        p.flex-wrap
+                            each tool in project.tools 
+                                span=tool 
+            p.project_link
+                a(href=project.link target="_blank") Link &rarr;
