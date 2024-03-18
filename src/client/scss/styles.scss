@@ -381,9 +381,16 @@ a {
     line-height: 2;
     white-space: pre-line;
 }
+.text-post .feature-list {
+    list-style: disc;
+    margin-top: $--margin-top;
+}
 .project_link {
+    display: flex;
+    flex-direction: column;
     margin-top: $--margin-top;
     white-space: nowrap;    
+    gap: $--margin 0;
 }
 
 /* Contact */

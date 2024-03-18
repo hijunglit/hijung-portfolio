@@ -14,5 +14,12 @@ mixin projects(project)
                         p.flex-wrap
                             each tool in project.tools 
                                 span=tool 
+                    .text-post 
+                        ul.feature-list
+                            each item in project.features 
+                                li
+                                    p=item 
             p.project_link
-                a(href=project.link target="_blank") Link &rarr;
+                a(href=project.url target="_blank") Link &rarr;
+                a(href=project.github target="_blank") Github &rarr; 
+                
