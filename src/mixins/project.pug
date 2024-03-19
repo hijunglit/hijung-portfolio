@@ -22,4 +22,5 @@ mixin projects(project)
             p.project_link
                 a(href=project.url target="_blank") Link &rarr;
                 a(href=project.github target="_blank") Github &rarr; 
+                a(href=`/projects/${project.key}/detail`) Detail &rarr;
                 
