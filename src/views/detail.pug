@@ -1,3 +1,26 @@
 extends base
 block contents
-    h1=project.name
+    .page_inner 
+        .detail 
+            .detail-wrap 
+                .detail-header
+                    h3=project.name 
+                    p=project.desc
+                .detail-content  
+                    .detail-thumb
+                        img(src=project.thumb , alt="thumbnail")
+                .detail-summary 
+                    .detail__skills 
+                        h3 skill
+                        each skill in project.tools
+                            span=skill 
+                    .detail__goals 
+                        h3 goals
+                        ul  
+                            each goal in project.goals 
+                                li=goal 
+                .detail-features
+                    h3 features 
+                    ul
+                        each feature in project.features 
+                            li=feature

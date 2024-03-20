@@ -392,6 +392,35 @@ a {
     gap: $--margin 0;
 }
 
+/* Detail */
+.detail {
+    padding: 0 $--margin;
+    box-sizing: border-box;
+}
+.detail-thumb img {
+    width: 100%;
+    height: auto;
+}
+.detail-wrap {
+    display: flex;
+    flex-direction: column;
+} 
+.detail-header {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+.detail-header h3 {
+    font-size: $--fs-heading;
+    font-weight: 700;
+}
+.detail-header p {
+    margin-top: $--margin-top;    
+}
+
 /* Contact */
 .contact__item {
     display: flex;
