@@ -1,22 +1,39 @@
+const BASE_URL = "/static/images/";
 const projects = [
   {
     key: "youtube",
     name: "youtube clone",
-    preview: "/static/images/youtube-sample.gif",
-    thumb: "/static/images/youtube__thumbnail.jpg",
+    preview: BASE_URL + "youtube-sample.gif",
+    thumb: BASE_URL + "youtube__thumbnail.jpg",
     desc: "crud를 구현한 동영상 플랫폼 클론 프로젝트",
     tools: ["node.js", "mongodb", "aws", "fly.io"],
     goals: [
-      "CRUD 기능을 구현해 웹 개발의 전체적인 흐름에 대한 이해도 향상을 위해",
+      "CRUD 기능을 구현해 웹 개발의 전체적인 흐름에 대한 이해도 향상을 위해 진행",
       "데이터베이스 프로그램을 사용해 DB 조작 및 쿼리를 사용하기 위해",
       "관계형 데이터 베이스에 대해 이해하기 위해",
       "github의 OAuth 기능을 구현하여 auth 시스템을 이해하기 위해",
     ],
     features: [
-      "github 회원가입",
-      "댓글 추가/삭제",
-      "동영상 업로드/삭제/수정",
-      "유저 프로필 등록",
+      {
+        name: "github 회원가입",
+        desc: "github OAuth 시스템을 이용한 회원가입 / 로그인 기능 구현",
+        img: BASE_URL + "oauth.JPG",
+      },
+      {
+        name: "댓글 추가/삭제",
+        desc: "mongoose api, express api 을 이용한 비디오 검색/ 댓글 추가 삭제",
+        img: BASE_URL + "registComment.JPG",
+      },
+      {
+        name: "동영상 업로드/삭제/수정",
+        desc: "mongoose api(create, findByIdAndDelete, findByIdAndUpdate)를 이용한 동영상 업로드",
+        img: BASE_URL + "uploadVideo.JPG",
+      },
+      {
+        name: "유저 프로필 등록",
+        desc: "mongoose findByIdAndUpdate api 를 이용한 프로필 등록",
+        img: BASE_URL + "registProfile.JPG",
+      },
     ],
     url: "https://youtube-2024.fly.dev",
     github: "https://github.com/hijunglit/youtube-2024",

@@ -5,3 +5,7 @@ import portfolioThumbnail from "../images/portfolio__thumbnail.jpg";
 import youtubeSample from "../images/youtube-sample.gif";
 import portfolioSample from "../images/portfolio__sample.gif";
 import heroCollectionSample from "../images/hero-collection__sample.gif";
+import oauth from "../images/oauth.JPG";
+import registComment from "../images/registComment.JPG";
+import registProfile from "../images/registProfile.JPG";
+import uploadVideo from "../images/uploadVideo.JPG";

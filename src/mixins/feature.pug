@@ -1,0 +1,8 @@
+mixin feature 
+    ul
+        each feature in project.features
+            li
+                .feature__header
+                    h3.name=feature.name
+                    p=feature.desc
+                img(src=feature.img, alt="feature img")

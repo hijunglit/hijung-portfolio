@@ -420,6 +420,45 @@ a {
 .detail-header p {
     margin-top: $--margin-top;    
 }
+.title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+}
+.detail-content, .detail-summary {
+    margin-top: $--margin-top;
+    display: flex;
+    flex-direction: column;
+    gap: $--margin-top;
+}
+.detail__goals ul li {
+    list-style-type: "- ";
+    line-height: 1.5rem;
+    word-break: keep-all;
+    margin-left: 10px;
+}
+.detail-features p {
+    line-height: 1.5rem;
+}
+.detail-features img {
+    width: 100%; height: auto;
+}
+.detail-features  ul {
+    display: flex;
+    flex-direction: column;
+    gap: $--margin-top;
+    margin-top: $--margin-top;
+}
+.detail-features li {
+    display: flex;
+    flex-direction: column;
+    gap: $--margin-top;
+}
+.detail-features .name {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 28px;
+}
 
 /* Contact */
 .contact__item {

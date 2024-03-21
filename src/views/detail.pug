@@ -1,4 +1,5 @@
 extends base
+include ../mixins/feature
 block contents
     .page_inner 
         .detail 
@@ -11,16 +12,19 @@ block contents
                         img(src=project.thumb , alt="thumbnail")
                 .detail-summary 
                     .detail__skills 
-                        h3 skill
+                        h3.title skill
                         each skill in project.tools
-                            span=skill 
+                            span #{skill}/&nbsp;
                     .detail__goals 
-                        h3 goals
+                        h3.title goals
                         ul  
                             each goal in project.goals 
                                 li=goal 
-                .detail-features
-                    h3 features 
-                    ul
-                        each feature in project.features 
-                            li=feature
+                    .detail-features
+                        h3.title features
+                        p
+                            each feature in project.features 
+                                span #{feature.name},&nbsp;
+                        +feature(item)
+
+                        
