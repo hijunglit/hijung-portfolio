@@ -417,19 +417,32 @@ a {
     font-size: $--fs-heading;
     font-weight: 700;
 }
-.detail-header p {
+.detail-header p, .detail-header .link {
     margin-top: $--margin-top;    
 }
+.detail-header .link {
+    display: flex;
+    gap: 25px;
+}
+.detail-header .link button {
+    background: none;
+    border: 1px solid $--main-color;
+    border-radius: 26px;
+}
+.detail-header .link a {
+    padding: 16px 18px;
+}
+
 .title {
     font-weight: 700;
     font-size: 16px;
     line-height: 32px;
 }
 .detail-content, .detail-summary {
-    margin-top: 50px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 25px;
 }
 .detail__goals ul li {
     list-style-type: "- ";
@@ -619,6 +632,10 @@ a {
     }
     .about_body {
         max-width: 54.857em;
+    }
+    .detail-content, .detail-summary {
+        margin-top: 50px;
+        gap: 50px;
     }
     .detail-features li {
         flex-direction: row-reverse;

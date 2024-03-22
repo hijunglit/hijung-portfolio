@@ -7,6 +7,11 @@ block contents
                 .detail-header
                     h3=project.name 
                     p=project.desc
+                    .link 
+                        button
+                            a(href=project.url target="_blank") Link
+                        button  
+                            a(href=project.github target="_blank") Github  
                 .detail-content  
                     .detail-thumb
                         img(src=project.thumb , alt="thumbnail")

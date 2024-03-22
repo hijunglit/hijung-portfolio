@@ -52,7 +52,7 @@ const projects = [
       {
         name: "반응형 웹",
         desc: "다양한 디바이스 화면에 대응하는 반응형 디자인",
-        img: BASE_URL + "portfolio__sample.gif",
+        img: BASE_URL + "portfolio__responsive.gif",
       },
       {
         name: "About 페이지",
@@ -88,16 +88,16 @@ const projects = [
       {
         name: "반응형 웹",
         desc: "다양한 디바이스 화면에 대응하는 반응형 디자인",
-        img: BASE_URL + "hero-collection__sample.gif",
+        img: BASE_URL + "hero__responsive.gif",
       },
       {
         name: "Home 페이지",
-        desc: "Api를 호출해 20개의 히어로 데이터를 호출",
+        desc: "Api를 호출해 20개의 히어로 데이터를 가져오기",
         img: BASE_URL + "hero__thumbnail.jpg",
       },
       {
         name: "Detail 페이지",
-        desc: "Home 페이지에서 클릭한 히어로의 데이터를 라우터 Link의 state 에 데이터 전달, useLocation을 이용하여 데이터 사용",
+        desc: "Home 페이지에서 클릭한 히어로의 데이터를 라우터 Link의 state, useLocation을 이용하여 데이터 전달 및 사용",
         img: BASE_URL + "hero__detail.JPG",
       },
     ],
