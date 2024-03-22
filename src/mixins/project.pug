@@ -18,7 +18,7 @@ mixin projects(project)
                         ul.feature-list
                             each item in project.features 
                                 li
-                                    p &#x2022; #{item} 
+                                    p &#x2022; #{item.name} 
             p.project_link
                 a(href=project.url target="_blank") Link &rarr;
                 a(href=project.github target="_blank") Github &rarr; 

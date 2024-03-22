@@ -9,3 +9,7 @@ import oauth from "../images/oauth.JPG";
 import registComment from "../images/registComment.JPG";
 import registProfile from "../images/registProfile.JPG";
 import uploadVideo from "../images/uploadVideo.JPG";
+import portfolioAbout from "../images/portfolio__about.JPG";
+import portfolioDetail from "../images/portfolio__detail.JPG";
+import portfolioProjects from "../images/portfolio__projects.JPG";
+import heroDetail from "../images/hero__detail.JPG";

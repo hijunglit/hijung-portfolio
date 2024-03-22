@@ -24,7 +24,9 @@ block contents
                         h3.title features
                         p
                             each feature in project.features 
-                                span #{feature.name},&nbsp;
+                                span #{feature.name}&nbsp;&nbsp;
                         +feature(item)
+        include ../partials/footer
+            
 
                         

@@ -49,11 +49,26 @@ const projects = [
       "진행한 프로젝트 들을 모으고 구체적인 내용을 설명하는 공간을 만들기 위해 제작",
     ],
     features: [
-      "반응형 웹",
-      "Home 페이지",
-      "About 페이지",
-      "Projects 페이지",
-      "Contact 페이지",
+      {
+        name: "반응형 웹",
+        desc: "다양한 디바이스 화면에 대응하는 반응형 디자인",
+        img: BASE_URL + "portfolio__sample.gif",
+      },
+      {
+        name: "About 페이지",
+        desc: "개인정보, 스킬, 수료 정보 제공",
+        img: BASE_URL + "portfolio__about.JPG",
+      },
+      {
+        name: "Projects 페이지",
+        desc: "진행 했던 프로젝트 정보 제공",
+        img: BASE_URL + "portfolio__projects.JPG",
+      },
+      {
+        name: "Detail 페이지",
+        desc: "프로젝트의 세부정보 제공",
+        img: BASE_URL + "portfolio__detail.JPG",
+      },
     ],
     url: "https://hijung-portfolio.fly.dev",
     github: "https://github.com/hijunglit/hijung-portfolio",
@@ -66,10 +81,26 @@ const projects = [
     desc: "usestate, useeffect 훅을 이용한 히어로 캐릭터 컬렉션 프로젝트",
     tools: ["react.js", "react-router", "github.io"],
     goals: [
-      "react.js hook에 대한 이해를 위해 진행",
-      "react.js의 DOM 제어방식을 경험하기 위해",
+      "React.js 숙련도 향상을 위해 진행",
+      "react.js와 Css를 활용하여 인터렉티브한 웹 프로젝트를 진행하기 위해",
     ],
-    features: ["반응형 웹", "SPA 라우팅", "useRef hook"],
+    features: [
+      {
+        name: "반응형 웹",
+        desc: "다양한 디바이스 화면에 대응하는 반응형 디자인",
+        img: BASE_URL + "hero-collection__sample.gif",
+      },
+      {
+        name: "Home 페이지",
+        desc: "Api를 호출해 20개의 히어로 데이터를 호출",
+        img: BASE_URL + "hero__thumbnail.jpg",
+      },
+      {
+        name: "Detail 페이지",
+        desc: "Home 페이지에서 클릭한 히어로의 데이터를 라우터 Link의 state 에 데이터 전달, useLocation을 이용하여 데이터 사용",
+        img: BASE_URL + "hero__detail.JPG",
+      },
+    ],
     url: "https://hijunglit.github.io/toy-project",
     github: "https://github.com/hijunglit/toy-project",
   },
